@@ -105,17 +105,48 @@
 // console.log(validatePIN());
 // console.log("radi")
 
-function rowWeights(array){
-    let team1 = 0;
-    let team2 = 0;
-    for(let i = 0;i < array.length;i++){
-        if(i % 2 === 0 || i === 0){
-            team1 += array[i];
-        }else{
-            team2 += array[i];
-        }
-    }
-    return [team1, team2];
- }
+// function rowWeights(array){
+//     let team1 = 0;
+//     let team2 = 0;
+//     for(let i = 0;i < array.length;i++){
+//         if(i % 2 === 0 || i === 0){
+//             team1 += array[i];
+//         }else{
+//             team2 += array[i];
+//         }
+//     }
+//     return [team1, team2];
+//  }
 
- rowWeights([80]);
+//  rowWeights([80]);
+
+// function checkExam(array1, array2) {
+//     let score = 0;
+//     for (let i = 0; i < array1.length; i++){
+//         console.log("Tacni odgovori: ", array1[i]);
+//         console.log("Odgovori za proveru: ", array2[i]);
+//         if(array1[i] === array2[i]){
+//             score += 4;
+//         }else if(array2[i] === ''){
+//             score += 0;
+//         }else if(array1 !== array2[i]){
+//         score -= 1;
+//         }
+//     }
+//     console.log("Student je osvojio: ",score);
+//     return score > 0 ? score : 0;
+// }
+// checkExam(["a", "a", "b", "d"], ["b", "c", "", "b"]);
+
+// function removeUrlAnchor(url){
+//     let newUrl = "";
+//     for(const char of url){
+//         char !== "#" ? newUrl += char : url = newUrl;
+// }
+// console.log(url);
+//   }
+//   removeUrlAnchor("www.codewars.com#about");
+
+
+// const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
+// console.log(binaryArrayToNumber([0, 0, 1, 1]))
