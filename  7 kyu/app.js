@@ -150,3 +150,20 @@
 
 // const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
 // console.log(binaryArrayToNumber([0, 0, 1, 1]))
+
+function removeSmallest(numbers) {
+    if (numbers.length === 0) return []; // Ako je niz prazan, vrati prazan niz
+    
+    let el = numbers[0];
+    let index = 0;
+    
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] < el) {
+            el = numbers[i];
+            index = i;
+        }
+    }
+
+    numbers.splice(index, 1); // Uklanja prvi element sa najmanjom vrednošću
+    return numbers;
+}
