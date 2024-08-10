@@ -151,19 +151,42 @@
 // const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
 // console.log(binaryArrayToNumber([0, 0, 1, 1]))
 
-function removeSmallest(numbers) {
-    if (numbers.length === 0) return []; // Ako je niz prazan, vrati prazan niz
+// function removeSmallest(numbers) {
+//     if (numbers.length === 0) return []; // Ako je niz prazan, vrati prazan niz
     
-    let el = numbers[0];
-    let index = 0;
+//     let el = numbers[0];
+//     let index = 0;
     
-    for (let i = 1; i < numbers.length; i++) {
-        if (numbers[i] < el) {
-            el = numbers[i];
-            index = i;
-        }
-    }
+//     for (let i = 1; i < numbers.length; i++) {
+//         if (numbers[i] < el) {
+//             el = numbers[i];
+//             index = i;
+//         }
+//     }
 
-    numbers.splice(index, 1); // Uklanja prvi element sa najmanjom vrednošću
-    return numbers;
-}
+//     numbers.splice(index, 1); // Uklanja prvi element sa najmanjom vrednošću
+//     return numbers;
+// }
+
+function solution(str, ending){
+    let pStr = '';
+    let sStr = '';
+    let j = str.length;
+    for(let i = ending.length-1; i >= 0; i--){
+        j--;
+        pStr += str[j];
+        console.log(str[i]);
+    }
+    for(let i = pStr.length -1;i>=0;i--){
+        sStr += pStr[i];
+    }
+    console.log(pStr)
+    console.log(sStr)
+    if(sStr === ending){
+        return true;
+    }else{
+        return false;
+    }
+  }
+
+  solution("acabnjco", "bnjco");
