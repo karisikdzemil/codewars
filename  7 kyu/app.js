@@ -168,25 +168,65 @@
 //     return numbers;
 // }
 
-function solution(str, ending){
-    let pStr = '';
-    let sStr = '';
-    let j = str.length;
-    for(let i = ending.length-1; i >= 0; i--){
-        j--;
-        pStr += str[j];
-        console.log(str[i]);
-    }
-    for(let i = pStr.length -1;i>=0;i--){
-        sStr += pStr[i];
-    }
-    console.log(pStr)
-    console.log(sStr)
-    if(sStr === ending){
-        return true;
-    }else{
-        return false;
-    }
-  }
+// function solution(str, ending){
+//     let pStr = '';
+//     let sStr = '';
+//     let j = str.length;
+//     for(let i = ending.length-1; i >= 0; i--){
+//         j--;
+//         pStr += str[j];
+//         console.log(str[i]);
+//     }
+//     for(let i = pStr.length -1;i>=0;i--){
+//         sStr += pStr[i];
+//     }
+//     console.log(pStr)
+//     console.log(sStr)
+//     if(sStr === ending){
+//         return true;
+//     }else{
+//         return false;
+//     }
+//   }
 
-  solution("acabnjco", "bnjco");
+//   solution("acabnjco", "bnjco");
+
+
+// I          1
+// V          5
+// X          10
+// L          50
+// C          100
+// D          500
+// M          1,000
+// function solution(number){
+//         let newNum = '';
+//         if(number / 1000 >= 0){
+//             newNum +="M";
+//         } if(number / 5 >= 0){
+//             newNum +="D";
+//         } if(number / 100 >= 0){
+//             newNum += "C";
+//         } if(number / 50 >= 0){
+//             newNum += "L";
+//         } if (number / 10 >= 0){
+//             newNum +=  "X";
+//         } if(number / 5 >= 0){
+//             newNum+= "V";
+//         }if(number / 1 >= 0){
+//             newNum+="I";
+//         }
+//     console.log(newNum)
+//   }
+
+//   solution(1600)
+
+// Niz brojeva
+const numbers = [3, 6, 8, 11, 14, 17, 20, 25, 30];
+
+// Petlja koja pronalazi i ispisuje parne brojeve
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+        console.log(numbers[i] + " je paran broj.");
+    }
+}
