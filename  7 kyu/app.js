@@ -222,6 +222,16 @@
 //   solution(1600)
 
 // Niz brojeva
+// const numbers = [3, 6, 8, 11, 14, 17, 20, 25, 30];
+
+// // Petlja koja pronalazi i ispisuje parne brojeve
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0) {
+//         console.log(numbers[i] + " je paran broj.");
+//     }
+// }
+
+// Niz brojeva
 const numbers = [3, 6, 8, 11, 14, 17, 20, 25, 30];
 
 // Petlja koja pronalazi i ispisuje parne brojeve
